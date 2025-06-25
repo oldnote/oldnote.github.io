@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag sets the viewport to control the layout on mobile browsers, -->
+    <!-- ensuring the page is responsive and scales correctly on different devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nikita V. - Backend Developer</title>
+    <link rel="stylesheet" href="/static/components/experience-card.css">
+    <link rel="stylesheet" href="/static/css/resume.css">
+</head>
+
+<body>
+    <header>
+        <h1 data-i18n="cap.header">Nikita V.</h1>
+        <span data-i18n="cap.body">Backend Developer</span>
+        <hr>
+    </header>
+    <main>
+        <h2 data-i18n="skills.header">Skills</h2>
+        <div class="skills-grid">
+            <div class="__col1">
+                <h3 data-i18n="skills.programming-languages.header">Programming languages</h3>
+                <p>Python</p>
+
+                <h3 data-i18n="skills.frameworks.header">Frameworks</h3>
+                <p>Fast API, Django</p>
+
+                <h3 data-i18n="skills.other.header">Other skills</h3>
+                <p>
+                    CI/CD, Docker, Compose, <br>
+                    Queues, Celery, RabbitMQ, <br>
+                    Quality Control, Git, TDD, MyPy, pytest, wemake, <br>
+                    PM-t, Mentorship, Business Analysis, Planning, <br>
+                    Security, XSS, Input Sanitization, Hashing
+                </p>
+            </div>
+
+            <div class="__col2"></div>
+
+            <div class="__col3">
+                <p>
+                <h3 data-i18n="skills.education.header">Education</h3>
+                <span data-i18n="skills.education.body">
+                    St. Petersburg Technical College of Management and Commerce
+                </span>
+                </p>
+
+                <p>
+                <h3 data-i18n="skills.specialization.header">Specialization</h3>
+                <span data-i18n="skills.specialization.body">Information systems and programming</span>
+                </p>
+
+                <p>
+                <h3 data-i18n="skills.languages.header">Languages</h3>
+                <div class="__languages">
+                    <div data-i18n="skills.languages.en">English</div>
+                    <div><b><span class="__highlighted">• • • • </span>•</b></div>
+                    <div data-i18n="skills.languages.ru">Russian</div>
+                    <div class="__highlighted"><b>• • • • •</b></div>
+                </div>
+                </p>
+            </div>
+        </div>
+
+        <h3 data-i18n="about.header">About me</h3>
+        <p data-i18n="about.body">
+            Hello, my name is Nikita! I have been developing backend servers for various applications for about 7 years.
+            My experience includes building MVPs for small businesses from scratch, supporting complex enterprise
+            systems, and restoring projects in critical condition.
+            <br><br>
+            I have enjoyed working in small to medium-sized teams, as well as managing projects independently or
+            overseeing junior developers.
+            <br><br>
+            I value honesty and openness, enjoy helping my colleagues, and believe that a healthy work environment is
+            essential. If you share these values, we will make a great team.
+        </p>
+
+        <h3 data-i18n="experience.header">Experience</h3>
+        <!-- Populated by javascript -->
+        <div id="experience-list"></div>
+
+    </main>
+
+    <!-- Downloaded at Wed 25 Jun 2025 20:06 from https://unpkg.com/i18next@25.2.1/i18next.min.js -->
+    <script src="/static/libs/i18next.min.js"></script>
+    <!-- Downloaded at Wed 25 Jun 2025 20:06 from https://unpkg.com/i18next-http-backend@3.0.2/i18nextHttpBackend.min.js -->
+    <script src="/static/libs/i18nextHttpBackend.min.js"></script>
+    <!-- Downloaded at Wed 25 Jun 2025 20:06 from https://unpkg.com/i18next-browser-languagedetector@8.2.0/i18nextBrowserLanguageDetector.min.js -->
+    <script src="/static/libs/i18nextBrowserLanguageDetector.min.js"></script>
+    <!-- Downloaded at Wed 25 Jun 2025 20:06 from https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js-->
+    <script src="/static/libs/handlebars.min.js"></script>
+    <script>
+        i18next
+            .use(i18nextHttpBackend)
+            .use(i18nextBrowserLanguageDetector)
+            .init({
+                detection: {
+                    order: ['querystring', 'navigator', 'htmlTag'],
+                    lookupQuerystring: 'lng',
+                    caches: ['localStorage']
+                },
+                fallbackLng: 'en-US',
+                debug: false,
+                backend: {
+                    loadPath: '/static/i18n/{{lng}}.json'
+                }
+            }, async (err, t) => {
+                if (err) return console.error(err);
+
+                // Render page using i18n transcriptions.
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    el.textContent = i18next.t(el.getAttribute('data-i18n'));
+                });
+                document.documentElement.lang = i18next.language;
+
+                // Fetch experiences array. Render from JSON using client-side renderer Handlebars.
+                const experiences = i18next.t('experiences', { returnObjects: true });
+                const templateText = await fetch('/static/components/experience-card.html').then(r => r.text());
+                const compiled = Handlebars.compile(templateText);
+                const container = document.getElementById('experience-list');
+                experiences.forEach(exp => {
+                    container.innerHTML += compiled(exp);
+                });
+
+                // Make page visible after all js stuff is completed.
+                document.querySelector('html').style.visibility = "initial";
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+{
+    "cap.header": "Nikita V.",
+    "cap.body": "Backend Developer",
+    "skills.header": "Skills",
+    "skills.programming-languages.header": "Programming languages",
+    "skills.frameworks.header": "Frameworks",
+    "skills.other.header": "Other skills",
+    "skills.education.header": "Education",
+    "skills.education.body": "St. Petersburg Technical College of Management and Commerce",
+    "skills.specialization.header": "Specialization",
+    "skills.specialization.body": "Information systems and programming",
+    "skills.languages.header": "Languages",
+    "skills.languages.en": "English",
+    "skills.languages.ru": "Russian",
+    "about.header": "About me",
+    "about.body": "Hello, my name is Nikita! I have been developing backend servers for various applications for about 7 years. My experience includes building MVPs for small businesses from scratch, supporting complex enterprise systems, and restoring projects in critical condition.\n\nI have enjoyed working in small to medium-sized teams, as well as managing projects independently or overseeing junior developers.\n\nI value honesty and openness, enjoy helping my colleagues, and believe that a healthy work environment is essential. If you share these values, we will make a great team.",
+    "experience.header": "Experience",
+    "experiences": [
+        {
+            "company_logo": "/static/media/mad_devs_logo.jpeg",
+            "position": "Senior Python Developer",
+            "company_name": "Mad Devs",
+            "start_date": "Oct 2021",
+            "end_date": "Sep 2024",
+            "total_years": "3 yrs",
+            "location": "Bishkek City, Kyrgyzstan",
+            "hourly_employment": "Full time",
+            "work_format": "Hybrid",
+            "keyAchievements": [
+                "Worked on many diverse projects (outsource company, see experiences below).",
+                "As additional responsibilities:",
+                "Worked on improvements to the hiring and employee grading process. Conducted employee grading and recruitment interviews.",
+                "Mentored and onboarded junior python developers. Acted as manager on internal employee onboarding projects.",
+                "Managed the internal python community. Facilitated meetings. Planned employee development events. Gave presentations.",
+                "Participated in the company's rapid response team. (see attachment)"
+            ],
+            "skills": [
+                "Python",
+                "Backend",
+                "Grading",
+                "Interviewing",
+                "Mentorship",
+                "Project Management"
+            ]
+        },
+        {
+            "company_logo": "/static/media/kintsugihealth_logo.jpeg",
+            "position": "Senior Python Developer (via Mad Devs LLC)",
+            "company_name": "Kintsugi",
+            "start_date": "Aug 2022",
+            "end_date": "Apr 2024",
+            "total_years": "1 yr 9 mos",
+            "location": "Bishkek City, Kyrgyzstan",
+            "hourly_employment": "Full time",
+            "work_format": "Remote",
+            "keyAchievements": [
+                "Restored the project after a failed refactoring attempt by the previous customer team.",
+                "Rewrote the project to a microservice architecture to enable scaling the SaaS platform Kintsugi business to any number of clients.",
+                "Got the product to a production-ready state where Kintsugi started looking for customers.",
+                "Implemented 90% auto-test coverage of key product features for reliable product performance.",
+                "Implemented a set of SOPs to improve the efficiency of the development and testing teams.",
+                "At the request of the security specialist: performed HIPAA compliance project satisfaction testing. Validated the security of PII storage. Fixed security vulnerabilities based on bot reports (Vanta Agent, etc).",
+                "Prepared documentation of project architecture and functionality using Arch 42 template and C4 model."
+            ],
+            "skills": [
+                "Python",
+                "Backend",
+                "Fast API",
+                "Rabbit MQ",
+                "AI Integration",
+                "Microservices",
+                "Req-ts Analysis",
+                "HIPAA"
+            ]
+        },
+        {
+            "company_logo": "/static/media/swipey_logo.jpeg",
+            "position": "Senior Python Developer (via Mad Devs LLC)",
+            "company_name": "Swipey",
+            "start_date": "Oct 2021",
+            "end_date": "Aug 2022",
+            "total_years": "11 mos",
+            "location": "Bishkek City, Kyrgyzstan",
+            "hourly_employment": "Full time",
+            "work_format": "Remote",
+            "keyAchievements": [
+                "Developed the backend for Swipey mobile app dealing with fund transfer of thousands of malaysian users",
+                "Planned sprints, mentored and guided a small team of Junior developers",
+                "Implemented robust money transfer automation through integration with partner services",
+                "Implemented 80% test coverage to ensure application reliability and user money security",
+                "Configured update automation and application health monitoring system for business continuity"
+            ],
+            "skills": [
+                "Python",
+                "Backend",
+                "Quality control",
+                "Banking Operations",
+                "Mentorship"
+            ]
+        },
+        {
+            "company_logo": "/static/media/missing_logo.svg",
+            "position": "Senior Python Developer (via Mad Devs LLC)",
+            "company_name": "Short-term projects",
+            "start_date": "Oct 2021",
+            "end_date": "Oct 2021",
+            "total_years": "<1 mth",
+            "location": "Bishkek City, Kyrgyzstan",
+            "hourly_employment": "Full time",
+            "work_format": "Remote",
+            "keyAchievements": [
+                "Agrocloud: Within the month, implemented the MVP of a field irrigation level control panel for a client.",
+                "Bilim: Finalized the backend of the menstrual cycle mobile app. Implemented 100% test coverage. Automated updates.",
+                "Ex Parte: Moved obsolete API to Databricks. Improved algorithms for analyzing patent documents. Increased test coverage by 20%.",
+                "MadDevs: Worked on LMS solution for employees."
+            ],
+            "skills": [
+                "Python",
+                "Backend",
+                "AgroTech Dashboards",
+                "Mobile BE Support",
+                "Data Analysis",
+                "LMS"
+            ]
+        },
+        {
+            "company_logo": "/static/media/evrone_logo.jpeg",
+            "position": "Middle Python Developer",
+            "company_name": "Evrone.com",
+            "start_date": "Jul 2019",
+            "end_date": "Oct 2021",
+            "total_years": "2 yrs 4 mos",
+            "location": "St Petersburg City, Russia",
+            "hourly_employment": "Full time",
+            "work_format": "Remote",
+            "keyAchievements": [
+                "Worked on many diverse projects (outsource company, see experiences below).",
+                "Participated in company's internal python communities."
+            ],
+            "skills": [
+                "Python",
+                "Backend",
+                "Communities Collaboration"
+            ]
+        },
+        {
+            "company_logo": "/static/media/otri_logo.jpg",
+            "position": "Middle Python Developer (via Evrone.com Inc)",
+            "company_name": "Otri",
+            "start_date": "Jul 2019",
+            "end_date": "Oct 2021",
+            "total_years": "2 yrs 4 mos",
+            "location": "St Petersburg City, Russia",
+            "hourly_employment": "Full time",
+            "work_format": "Remote",
+            "keyAchievements": [
+                "Implemented 70% of all server side work for a mobile application.",
+                "Released the product in production with 6000 users and daily revenue of ~1k usd / day.",
+                "Closed the scope of work for 2 other developers who had personal emergencies.",
+                "Integrated a partner lab that provides at-home testing services.",
+                "Integrated payment systems CloudPayments and Yandex.Kassa, subscription system, and currency conversion.",
+                "Implemented a basic algorithm for product recommendations based on nutrient information from analyses.",
+                "Implemented reports in Slack."
+            ],
+            "skills": [
+                "Python",
+                "Backend",
+                "Payment Integration",
+                "Medlab integration",
+                "Work with nutrition data"
+            ]
+        },
+        {
+            "company_logo": "/static/media/bulls-vs-bears-logo.avif",
+            "position": "Middle Python Developer (via Evrone.com Inc)",
+            "company_name": "Bullsvsbears",
+            "start_date": "Jul 2019",
+            "end_date": "Nov 2019",
+            "total_years": "5 mos",
+            "location": "St Petersburg City, Russia",
+            "hourly_employment": "Full time",
+            "work_format": "Remote",
+            "keyAchievements": [
+                "Implemented server (50%) with game logic and API for frontend.",
+                "Got the project into production, which was 2 months overdue at the start of work.",
+                "Closed the manager's responsibilities for communication with the client, drafting TOR and project life cycle."
+            ],
+            "skills": [
+                "Python",
+                "Backend",
+                "Game Dev",
+                "Binary Option",
+                "Blockchain (TRON)",
+                "Smart Contracts"
+            ]
+        },
+        {
+            "company_logo": "/static/media/wwhw_logo.png",
+            "position": "Junior Python Developer",
+            "company_name": "WWHW",
+            "start_date": "Sep 2016",
+            "end_date": "Jul 2019",
+            "total_years": "2 yrs 11 mos",
+            "location": "St Petersburg City, Russia",
+            "hourly_employment": "Full time",
+            "work_format": "On-site",
+            "keyAchievements": [
+                "Mentored a few new python developers.",
+                "Implemented over 30 parsers to aggregate event posters around the world.",
+                "Implemented orchestration of parsers.",
+                "Developed a web service for home delivery of groceries generating a shopping cart from past receipts.",
+                "Developed a telegram bot for home delivery service.",
+                "Developed a telegram bot to track weight.",
+                "Implemented a service for issuing discounted travel tickets and integration with the city's transport system."
+            ],
+            "skills": [
+                "Python",
+                "Backend",
+                "Web Services",
+                "Telegram Bots",
+                "Mentorship",
+                "Data Aggregation"
+            ]
+        }
+    ]
+}

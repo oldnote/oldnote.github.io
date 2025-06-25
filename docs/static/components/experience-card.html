@@ -1,0 +1,29 @@
+<!-- Handlebars template. -->
+<div class="experience-card">
+    <div class="__col1"><img src="{{company_logo}}"></div>
+    <div class="__col2">
+        <h4>{{position}}</h4>
+        <p>
+            {{company_name}} <b>·</b> {{hourly_employment}}<br>
+            <span class="__dates">
+                {{start_date}} - {{end_date}} <b>·</b> {{total_years}}<br>
+                {{location}} <b>·</b> {{work_format}}
+            </span>
+        </p>
+
+        <ul>
+            {{#each keyAchievements}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <br>
+        <!-- TODO: Move "style" to css. -->
+        <div style="display: flex; font-size: 13px">
+            <div style="flex: 1%"><strong><span style="font-size: 15px">⟢</span></strong></div>
+            <div style="flex: 5px"></div>
+            <div style="flex: 99%">
+                <strong>{{#each skills}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</strong>
+            </div>
+        </div>
+    </div>
+</div>

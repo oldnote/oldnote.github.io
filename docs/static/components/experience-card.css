@@ -1,0 +1,56 @@
+/* Experience card CSS, BEM naming. */
+.experience-card:first-child {
+    border-top: initial;
+    padding-top: initial;
+    margin-top: initial;
+}
+
+.experience-card {
+    display: flex;
+    gap: 3%;
+
+    border-top: solid 0.5px rgb(232 232 232);
+    padding-top: 20px;
+    margin-top: 20px;
+
+    /* Printing rules */
+    page-break-inside: avoid;
+    break-inside: avoid;
+
+    .__col1 {
+        img {
+            max-width: 50px;
+            min-width: 50px;
+            object-fit: contain;
+        }
+    }
+
+    .__col2 {
+        flex: 100%;
+
+        li:before {
+            content: "";
+            margin-left: -0.5rem;
+        }
+
+        .__skills {
+            font-size: 13px;
+            list-style: none;
+        }
+
+        .__skills li:before {
+            content: "⟢";
+            font-size: 15px;
+            padding-right: 0px;
+            margin: 0;
+        }
+
+        p {
+            line-height: initial;
+        }
+
+        .__dates {
+            color: rgb(0 0 0/.6);
+        }
+    }
+}
